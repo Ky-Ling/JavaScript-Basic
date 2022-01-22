@@ -1,0 +1,41 @@
+<!--
+ * @Date: 2021-10-03 08:54:05
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-03 21:18:17
+ * @FilePath: \JavaScript\2-Modifying_HTML_Elements.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- How can we access the HTML elements? -->
+
+    <!-- "ID" references an access to specific elements in our document. -->
+    <h1 id="header">Hello World</h1>
+
+    <input type="text" id="inp" />
+    <script type="text/javascript">
+      // How can I reference the h1 tag with the id of header?
+
+      // Get the value or change the value of this h1 tag.
+
+      document.getElementById("header").innerHTML = "I like programming!!";
+      // In this line of code, "document" references the total html document, "innerHTML" is actually referring to what's inside
+      //    of these tags.
+
+      // Simply write whatever the value is of the inner HTML of  the elements id "header".
+      document.write(document.getElementById("header").innerHTML);
+
+      // How to change the value of the text box?
+      // document.getElementById("inp").value = "Hello input element!!";
+
+      // Print out with the value of our text input boxes.
+      console.log(document.getElementById("inp").value);
+    </script>
+  </body>
+</html>

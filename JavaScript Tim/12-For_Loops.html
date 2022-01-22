@@ -1,0 +1,53 @@
+<!--
+ * @Date: 2021-10-04 09:25:20
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-04 09:53:35
+ * @FilePath: \JavaScript\12-For_Loops.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <script>
+      /*
+        for (var i = 0; i <= 10; i++) {
+          console.log(i);
+          if (i == 7) {
+            break;
+          }
+        }
+        */
+
+      /*
+      function findInArray(arr, value) {
+        //   It will loop through the array and tell me if value exists in it.
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] == value) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      var arr = [1, 4, 6, 34, 56, 65, 343, "Tim", true];
+      console.log(findInArray(arr, 56));
+      console.log(findInArray(arr, "John"));*/
+
+      function nsquared(n) {
+        for (var i = 0; i < n; i++) {
+          for (var j = 0; j < n; j++) {
+            console.log("Run");
+          }
+        }
+      }
+
+      nsquared(5);
+    </script>
+  </body>
+</html>

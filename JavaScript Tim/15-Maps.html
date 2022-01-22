@@ -1,0 +1,73 @@
+<!--
+ * @Date: 2021-10-04 10:54:44
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-04 20:56:35
+ * @FilePath: \JavaScript\15-Maps.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <script>
+      // Maps are kind of a mixture of sets and arrays.
+
+      var mp = new Map([
+        ["K", 1],
+        ["Y", 9],
+      ]);
+
+      // How to get the key? With the get(), it will return to us the value associated with the key .
+      console.log(mp.get("K"));
+
+      // How to add things to the map?
+      mp.set("F", 78);
+      mp.set(34, "hello");
+      console.log(mp.get(34));
+
+      // How to get the size of our map?
+      console.log(mp.size);
+
+      // How to delete things?
+      mp.delete("Y");
+      console.log(mp.size);
+
+      // How to check if this map has a specific key?
+      console.log(mp.has("K"));
+
+      // How too remove all the keys?
+      // mp.clear();
+      // console.log(mp);
+
+      console.log(mp.entries());
+
+      for (var entry of mp) {
+        console.log(entry);
+        console.log(entry[0]);
+        // It will return the keys
+        console.log(entry[1]);
+        // It will return the values
+      }
+      // From the result, we can know that entry represents the whole thing, so if we just wanna access the key or just the value, we have to use the index.
+
+      // How to count the number of characters in a string?
+      var mp1 = new Map();
+      str = "Welcome to javascript world! ";
+
+      for (var letter of str) {
+        if (mp1.has(letter)) {
+          mp1.set(letter, mp1.get(letter) + 1);
+        } else {
+          mp1.set(letter, 1);
+        }
+      }
+
+      console.log(mp1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+ * @Date: 2021-10-03 16:45:58
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-03 17:12:53
+ * @FilePath: \JavaScript\9- String_Methods_and_Manipulation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Please type something</h1>
+    <input type="text" id="inp" />
+    <button onclick="pressed()">Click</button>
+    <p id="output"></p>
+
+    <script type="text/javascript">
+      function pressed() {
+        var text = document.getElementById("inp").value;
+        output.innerHTML = text.toUpperCase();
+        // output.innerHTML = text.startsWith("@@@");
+
+        //trim(): Simply remove any leading or trailing white spaces from our string, it will get us a string without all the
+        //  spaces.
+        // output.innerHTML = text.trim(endsWith("@"));
+        // console.log(text.length)
+        output.innerHTML = "You types: " + text.trim();
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+ * @Date: 2021-10-03 14:45:18
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-03 21:38:20
+ * @FilePath: \JavaScript\7-Conditions.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Hello</h1>
+    <input type="text" id="inp" />
+
+    <!-- When the button is pressed, we will activate this function and see what the current text value is  -->
+    <button onclick="pressed()">Click</button>
+
+    <script>
+      function pressed() {
+        var text = document.getElementById("inp").value;
+
+        if (text === "red") {
+          document.getElementById("header").style.color = "red";
+        } else if (text === "blue") {
+          document.getElementById("header").style.color = "blue";
+        } else {
+          document.getElementById("header").style.color = "gold";
+          // When I pressed the button and if they didn't type red or other things, i want it to automatically change the color
+          //      to gold.
+        }
+      }
+    </script>
+  </body>
+</html>

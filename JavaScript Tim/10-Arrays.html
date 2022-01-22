@@ -1,0 +1,57 @@
+<!--
+ * @Date: 2021-10-04 08:35:50
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-04 20:54:11
+ * @FilePath: \JavaScript\10-Arrays.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <script>
+      // Two ways to create a new array:
+      var tim = ["hello", 21, 3.3, "tim"];
+
+      // Create a new array of size 3:
+      // var arr = new Array(3) = ["hello", 33, "World"]
+
+      // How can I access these different elements?
+      // Index is simply a number that represents its position in the array. The index is for any array go from zero to the size
+      //   of the array minus one.
+      console.log(tim[1]);
+
+      // How to change one of the elements or add a new element to our array?
+      tim[2] = "JavaScript";
+      console.log(tim[2]);
+
+      // How to check the length of an array?
+      console.log(tim.length);
+
+      // How to remove an element from the end of the array?
+      console.log(tim.pop());
+      console.log(tim);
+
+      // How to add a new element to the array?
+      tim.push("New Element");
+      console.log(tim);
+
+      // How to remove the first element from the array?
+      tim.shift();
+      console.log(tim);
+
+      // How to sort the array?
+      tim.sort();
+      console.log(tim);
+
+      tim[7] = 8;
+      console.log(tim);
+      // It will fill all the indexes up to seven with empty elements and then fill index seven with eight.
+    </script>
+  </body>
+</html>

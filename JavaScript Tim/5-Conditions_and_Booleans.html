@@ -1,0 +1,55 @@
+<!--
+ * @Date: 2021-10-03 11:06:18
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-03 21:36:41
+ * @FilePath: \JavaScript\5-Conditions_and_Booleans.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <script type="text/javascript">
+      var x = 9;
+      var y = 3;
+      var z = x < y;
+      console.log(z);
+
+      var d = x == y;
+      // "=": assignment operator
+      // "==": check for equivalence
+      // "===": which stands for is equal to value and is equal to type
+
+      var a = 343;
+      var b = "343";
+      var c = a == b;
+      console.log(c);
+      // What we have to know is that they are in different types, one is a string, another is number. From the result, we
+      //    will get true, because the two equal signs compare the value and does not look at the type.
+
+      var d = a === b;
+      console.log(d);
+      // On contrast, with the three equal signs, we will get the false, because this three equal signs not only look at the
+      //   value, but also the type.
+      var name = "Tim";
+      var other_name = "John";
+      var x1 = 89;
+      var x2 = 77;
+
+      console.log(name == other_name && x1 > x2);
+      console.log(name != other_name || x1 > x2);
+      console.log(!true);
+      /* And: Only if both of these conditions are true, this whole thing we have typed here will evaluate to true. If one of them is false or
+          both of them are false, the result is false. */
+
+      /* Or: If either of them are true or both of them are true, the result is true. */
+      // ! : reverse whatever the current thing you have.
+    </script>
+  </body>
+</html>

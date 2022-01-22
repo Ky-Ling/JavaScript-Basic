@@ -1,0 +1,35 @@
+<!--
+ * @Date: 2021-10-03 14:21:46
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-03 14:44:23
+ * @FilePath: \JavaScript\6-Functions.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Hello</h1>
+    <!-- How do we call a function from our html? -->
+    <!-- In the button element, we have to set a function that we i wanna trigger when this button is pressed. 
+            It means when we click this button, we will call this function. -->
+    <button onclick="red()">Red</button>
+    <button onclick="green()">Green</button>
+    <script type="text/javascript">
+      // How can we make it when we press a button that we can actually change elements of h1 tag on the page?
+      function red() {
+        //   Change the text
+        document.getElementById("header").innerHTML = "RED";
+      }
+
+      function green() {
+        //   Change the color
+        document.getElementById("header").style.color = "green";
+      }
+    </script>
+  </body>
+</html>
