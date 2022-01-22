@@ -1,2 +1,2 @@
 # JavaScript-Basic
-Fundamental knowledge
+Fundamental knowledge of JavaScript including basic knowledge and DOM(Document object model).
