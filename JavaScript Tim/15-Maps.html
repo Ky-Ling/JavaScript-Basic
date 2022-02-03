@@ -1,8 +1,8 @@
 <!--
  * @Date: 2021-10-04 10:54:44
  * @LastEditors: GC
- * @LastEditTime: 2021-10-04 20:56:35
- * @FilePath: \JavaScript\15-Maps.html
+ * @LastEditTime: 2022-02-03 23:09:04
+ * @FilePath: \JavaScript Tim\15-Maps.html
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +40,7 @@
       // How to check if this map has a specific key?
       console.log(mp.has("K"));
 
-      // How too remove all the keys?
+      // How to remove all the keys?
       // mp.clear();
       // console.log(mp);
 
@@ -48,12 +48,15 @@
 
       for (var entry of mp) {
         console.log(entry);
-        console.log(entry[0]);
+
         // It will return the keys
-        console.log(entry[1]);
+        console.log(entry[0]);
+
         // It will return the values
+        console.log(entry[1]);
       }
-      // From the result, we can know that entry represents the whole thing, so if we just wanna access the key or just the value, we have to use the index.
+      // From the result, we can know that entry represents the whole thing, so if we just wanna access the key or just
+      //    the value, we have to use the index.
 
       // How to count the number of characters in a string?
       var mp1 = new Map();
