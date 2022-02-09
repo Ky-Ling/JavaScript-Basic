@@ -1,0 +1,12 @@
+1: AJAX: Asynchronous JavaScript and XML
+     When we are using AJAX, it is sending some kind of requests to a server and that server gets back 
+        to the information and the format. And we take that JSON format that contains all the data, we 
+        turn that and parse it into JavaScript usable code and then we just update the information on 
+        the screen.  
+
+2: Callback function:
+    A function that is passed in as a parameter and that is gonna run later on in a later time
+
+3: Promise:
+    A promise is just an object that basically gives us back either a result of an asynchronous operation or a failure of asynchronous
+    operation
