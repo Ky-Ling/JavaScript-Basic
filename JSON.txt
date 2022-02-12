@@ -1,0 +1,13 @@
+1: What is JSON?
+    (1): Data Representation Format
+    (2): Commonly Used for APIs and Configs
+    (3): Lightweight and Easy to Read/Write
+    (4): Integrates Easily With Most Languages
+
+2: JSON Types
+    (1): String: "Hello World", "Kyle", "1"
+    (2): Numbers: 10, 1.4, -12, 1.2e10
+    (3): Null: null
+    (4): Boolean: true false
+    (5): Arrays: [1, 2, 4], ["Hello World"]
+    (6): Objects: { "key": "value" }, {"age": 30} 
