@@ -1,0 +1,23 @@
+1: What is AJAX?
+    (1): Asynchronous JavaScript and XML
+    (2): Set of technologies
+    (3): Send & receive data asynchronously
+    (4): Does not interfere with current web page
+    (5): JSON has replaced XML for the most part
+
+
+2: XmlHttpRequest(XHR) Object:
+    (1): API in the form of an Object
+    (2): Provided by the browser's JS environment
+    (3): Methods transfer data between client/server
+    (4): Can be used with other protocols than HTTP
+    (5): Can work with data other than XML(JSON, plain text)
+
+
+3: Libraries & Other Methods
+    (1): jQuery
+    (2): Axios
+    (3): Superagent
+    (4): Fetch API
+    (5): Prototype
+    (6): Node HTTP
